@@ -1,0 +1,195 @@
+#top-section {
+    background: @linearGradient, url('../images/cover-pic.jpg');
+    .sectionStyle(100%, 800px);
+    margin-top: 0;
+    background-size: cover;
+
+    .top-container {
+        padding: 100px;
+        padding-left: 500px;
+        height: 100px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    p {
+        color: @theme-color;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+}
+.btn {
+    .signUp(block,white, 200px, 45px, 2rem, 20px, center);
+    border: 1px solid black;
+    margin: 10px 100px;
+
+    a {
+        .aStyler();
+
+        &:hover {
+            color: @theme-color;
+        }
+    }
+}
+
+
+
+//FEATURES
+
+#feature-section {
+    .sectionStyle(100%, auto);
+
+    h2 {
+        .h2Style();
+        padding-left: 25px;
+    }
+
+    .feature-container {
+        .displayFlex();
+    }
+
+    .featurettes {
+        .boxStyler();
+        border-radius: 10px;
+
+    }
+
+    p {
+        font-size: 25px;
+        padding: 20px;
+    }
+}
+
+
+//Steps Section
+
+#step-section {
+    background: @linearGradient, url('../images/parallax-pic.jpg');
+    .sectionStyle(100%, 600px);
+    margin-top: 0;
+    background-size: cover;
+    padding-top: 10%;
+    
+
+    .step-container {
+        .displayFlex();
+        
+    }
+
+
+    .steps {
+        .boxStyler();
+        border-radius: 10px;
+    }
+
+
+    h2 {
+        font-size: 60px;
+        font-weight: bold;
+        margin: 10;
+        padding: 40px;
+        color: white;
+    }
+
+
+    h4 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+//Testimonials
+
+#testimonial-section {
+    .sectionStyle(100%, 800px);
+
+    h2 {
+        .h2Style();
+        padding-left: 350px;
+    }
+
+    .testimonial-container {
+        .displayFlex();
+
+        .testimonies {
+            position: relative;
+            width: 350px;
+            margin: 50px;
+            // background: @theme-color;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 2px 10px 6px -1px @theme-color;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border-radius: 50%;
+            border-radius: 2px 20px;
+
+        }
+    }
+}
+
+#get-started-section {
+    background: url('../images/ev-zQtmZjMdejU-unsplash.jpg');
+    .sectionStyle(100%, 700px);
+    border: solid @theme-color;
+    img{
+        border-radius: 10px 30px;
+    }
+    h2 {
+        .h2Style();
+    }
+
+    .get-started-container {
+        .displayFlex();
+        margin: 40px;
+    }
+
+    .start {
+        margin: 50px;
+        width: 500px;
+        height: auto;
+        text-align: center;
+        text-align: center;
+
+
+        p {
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        button {
+            .signUp(block, white, 200px, 45px, 2rem, 20px, center);
+            border: 2px solid black;
+            margin-left: 28%;
+
+            a {
+                .aStyler();
+
+                &:hover {
+                    color: @theme-color;
+                }
+            }
+
+        }
+    }
+}

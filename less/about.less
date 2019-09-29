@@ -1,0 +1,174 @@
+.a-top-container {
+    background: @linearGradient, url('../images/parallax-pic.jpg'), no-repeat, center;
+    .sectionStyle(100%, 700px);
+    margin-top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+    padding-left: 15%;
+    text-align: center;
+
+    @media @mobile {
+        .sectionStyle(100%, auto);
+        padding: 20px 40px;
+        
+    }
+
+    p {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 25px;
+
+        @media @mobile {
+            font-size: 20px;
+        }
+    }
+
+    h1 {
+        color: white;
+        font-size: 7rem;
+        font-weight: bold;
+        border: 5px solid @theme-color;
+        border-radius: 40px;
+        padding: 10px 60px;
+        width: 50%;
+        margin-left: 200px;
+
+        @media @mobile {
+            font-size: 2.5rem;
+            margin: 0 50px;
+            padding: 20px;
+            width: 70%;
+        }
+    }
+}
+
+.a-btn {
+    .signUp(block,white, 200px, 45px, 2rem, 20px, center);
+    box-shadow: 0 10px 6px -6px black;
+    margin: 10px 400px;
+
+     @media @mobile {
+         margin-left: 25%;
+         margin-top: 10%;
+     }
+
+    a {
+        .aStyler();
+
+        &:hover {
+            color: @theme-color;
+        }
+    }
+}
+
+
+.about-container {
+    margin: 0, auto;;
+    color: #fff;
+}
+
+.teams {
+    color: @font-color;
+    .h2Style();
+}
+
+
+//Team Members
+
+#team-section {
+    .sectionStyle(100%, auto);
+
+    h2 {
+        .h2Style();
+        padding-left: 350px;
+
+        @media @mobile {
+            font-size: 50px;
+            padding-left: 20px;
+        }
+    }
+
+    .team-container {
+        .displayFlex();
+        flex-wrap: wrap;
+
+        .team-members {
+            position: relative;
+            width: 350px;
+            margin: 50px;
+            background: @theme-color;
+            padding: 20px;
+            border-radius: 10px 30px;
+            text-align: center;
+            box-shadow: 0 10px 6px -6px black;
+
+            i {
+                font-size: 30px;
+                color: black;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border-radius: 50%;
+
+        }
+         a {
+             font-size: 20px;
+             color: @font-color;
+             text-decoration: none;
+         }
+
+    }
+}
+//About Company
+
+#character-section {
+    background: @linearGradient, url('../images/parallax-pic.jpg');
+    .sectionStyle(100%, auto);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    background-size: cover;
+    padding-top: 10%;
+
+    h2 {
+        font-size: 80px;
+        font-weight: bold;
+        margin: 0;
+        color: white;
+        text-align: center;
+
+        @media @mobile {
+            font-size: 40px;
+        }
+    }
+
+    p {
+        font-size: 25px;
+        width: 70%;
+        color: @theme-color;
+        margin: 20px 250px;
+        text-align: center;
+
+        @media @mobile {
+            font-size: 20px;
+            width: 80%;
+            margin: 30px;
+            padding-left: 30px;
+
+        }
+    }
+}
